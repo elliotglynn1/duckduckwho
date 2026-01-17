@@ -86,3 +86,9 @@ set EBIRD_API_TOKEN=your_ebird_api_token
 python main.py
 ```
 
+## Development
+
+Pre-commit hooks for linting can be enabled by running
+```bash
+pre-commit --install
+```
