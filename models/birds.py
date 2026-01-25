@@ -9,13 +9,6 @@ from pyspark.sql.types import (
 from pyspark.sql import SparkSession
 from pyspark.sql.dataframe import DataFrame
 from typing import List
-import os
-import sys
-
-python_path = sys.executable
-os.environ["PYSPARK_PYTHON"] = python_path
-os.environ["PYSPARK_DRIVER_PYTHON"] = python_path
-
 
 class Birds:
     schema = StructType(

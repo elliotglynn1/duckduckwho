@@ -15,10 +15,6 @@ pip install uv
 uv venv .venv
 source .venv/bin/activate
 ```
-*On Windows, use:*
-```cmd
-.venv\Scripts\activate
-```
 
 ### 3. Install Java 17 or later (required for PySpark)
 
@@ -28,14 +24,6 @@ This project uses PySpark, which requires Java 17 or later.
 ```bash
 java -version
 ```
-
-**On Windows:**
-1. Download Java 17+ from [Adoptium](https://adoptium.net/) or [Oracle](https://www.oracle.com/java/technologies/downloads/)
-2. Install Java and note the installation path (usually `C:\Program Files\Java\jdk-17` or similar)
-3. Set the `JAVA_HOME` environment variable:
-   - Open System Properties → Environment Variables
-   - Create/update `JAVA_HOME` to point to your Java installation directory
-   - Update `PATH` to include `%JAVA_HOME%\bin`
 
 **On Mac/Linux:**
 ```bash
