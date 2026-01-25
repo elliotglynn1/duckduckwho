@@ -5,10 +5,6 @@ from models.get_local_position import LocalPosition
 import os
 import sys
 
-python_path = sys.executable
-os.environ["PYSPARK_PYTHON"] = python_path
-os.environ["PYSPARK_DRIVER_PYTHON"] = python_path
-
 def main():
     api_token = os.getenv("EBIRD_API_TOKEN")
     if not api_token:

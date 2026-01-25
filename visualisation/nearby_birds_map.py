@@ -28,8 +28,8 @@ def plot_nearby_birds(birds: Birds):
             "scientific_name": True,
             "how_many": True,
         },
-        zoom=16,
-        height=700,
+        zoom=12,
+        height=1200,
     )
 
     fig.update_layout(
